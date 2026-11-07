@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payel Singha | CSE Student</title>
+<meta name="description" content="Portfolio of Payel Singha, B.Tech CSE student looking for an internship.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6fc; --surface:#ffffff; --ink:#16213e; --muted:#566079; --line:#dde3f2;
+  --indigo:#4338ca; --teal:#0ea5a4; --coral:#f5586b; --amber:#ffb020; --green:#16a34a; --blue:#2563eb;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0e1426; --surface:#18213b; --ink:#eef2ff; --muted:#a5b1d1; --line:#2a3558;
+        --indigo:#8b83ff; --teal:#2dd4d2; --coral:#ff7a8a; --amber:#ffc94d; --green:#4ade80; --blue:#6aa0ff;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;line-height:1.65}
+a{color:var(--indigo)}
+a:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+
+/* Hero */
+.top{background:linear-gradient(135deg,#1b1f6b 0%,#4338ca 55%,#0ea5a4 100%);color:#fff;position:relative;overflow:hidden}
+.top::after{content:"";position:absolute;right:-70px;top:-70px;width:260px;height:260px;border-radius:50%;background:var(--coral);opacity:.35}
+.top::before{content:"";position:absolute;right:90px;bottom:-90px;width:170px;height:170px;border-radius:50%;background:var(--amber);opacity:.30}
+.top .wrap{position:relative;z-index:1}
+nav{display:flex;gap:22px;padding:22px 0;font-weight:600;flex-wrap:wrap}
+nav a{text-decoration:none;color:#dfe5ff}
+nav a:hover{color:#fff;text-decoration:underline}
+.hero{padding:44px 0 70px}
+.tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:5px 14px;border-radius:999px;font-weight:600;font-size:.9rem;margin-bottom:18px}
+h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(2.6rem,9vw,4.6rem);line-height:1.02;margin:0 0 18px;letter-spacing:-.02em}
+h1 span{background:linear-gradient(transparent 62%,var(--coral) 62%)}
+.lead{font-size:1.15rem;color:#e6eaff;max-width:56ch;margin:0 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;margin:0 10px 10px 0}
+.btn.main{background:var(--amber);color:#1b1f3a}
+.btn.alt{border:2px solid rgba(255,255,255,.6);color:#fff}
+.btn:hover{filter:brightness(1.08)}
+
+/* Sections */
+section{padding:40px 0 8px}
+h2{font-family:"Bricolage Grotesque",sans-serif;font-size:1.75rem;margin:0 0 18px;padding-left:14px;border-left:6px solid var(--indigo)}
+#skills h2{border-color:var(--teal)}
+#education h2{border-color:var(--coral)}
+#projects h2{border-color:var(--amber)}
+#contact h2{border-color:var(--green)}
+
+.skills{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.skills li{padding:8px 16px;border-radius:999px;font-weight:600;color:#fff}
+.skills .lang{background:var(--blue)}
+.skills .web{background:var(--coral)}
+.skills .tool{background:var(--teal)}
+@media (prefers-color-scheme:dark){.skills li{color:#0e1426}}
+
+.edu{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--coral);border-radius:10px;padding:14px 18px;margin:0 0 14px}
+.edu:nth-child(2){border-left-color:var(--indigo)}
+.edu:nth-child(3){border-left-color:var(--teal)}
+.edu:nth-child(4){border-left-color:var(--amber)}
+.edu strong{display:block}
+.edu small{color:var(--muted)}
+
+.proj{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--amber);border-radius:10px;padding:20px}
+.proj h3{margin:0 0 6px;font-size:1.15rem}
+.proj p{margin:0 0 10px;color:var(--muted)}
+footer{margin-top:40px;padding:26px 0;background:#1b1f6b;color:#cfd6ff;font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <header class="hero" id="about">
+      <span class="tag">B.Tech CSE &bull; Open to internships</span>
+      <h1>Hi, I'm <span>Payel Singha</span></h1>
+      <p class="lead">I'm a second-year B.Tech Computer Science student at Srinix College of Engineering, Balasore. I'm learning to build real projects, and I'm looking for an internship where I can gain practical experience.</p>
+      <a class="btn main" href="#contact">Get in touch</a>
+      <a class="btn alt" href="https://github.com/payelsingha1108-png">My GitHub</a>
+    </header>
+  </div>
+</div>
+
+<main class="wrap">
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li class="lang">Python</li><li class="lang">C</li><li class="lang">C++</li><li class="lang">Java (basic)</li>
+      <li class="web">HTML</li><li class="web">CSS</li><li class="web">JavaScript</li>
+      <li class="tool">MS Office</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu"><strong>B.Tech in Computer Science and Engineering (2nd year)</strong>Srinix College of Engineering, Balasore<br><small>Lateral entry</small></div>
+    <div class="edu"><strong>Diploma in Computer Science and Engineering</strong>Balasore School of Engineering, Odisha<br><small>80%</small></div>
+    <div class="edu"><strong>Higher Secondary (Arts)</strong>Dantan Binapani Girls High School<br><small>81%</small></div>
+    <div class="edu"><strong>Madhyamik</strong>Dantan Binapani Girls High School<br><small>72%</small></div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="proj">
+      <h3>My-first-project</h3>
+      <p>My first GitHub repository for practicing CSE projects. More projects coming soon.</p>
+      <a href="https://github.com/payelsingha1108-png/My-first-project">View on GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Find my code on <a href="https://github.com/payelsingha1108-png">GitHub</a>. I'm open to internship opportunities.</p>
+  </section>
+</main>
+
+<footer>&copy; 2026 Payel Singha</footer>
+</body>
+</html>
